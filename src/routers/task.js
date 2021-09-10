@@ -48,7 +48,7 @@ router.get("/tasks", auth, async (req,res)=>{
                 skip: parseInt(req.query.skip),
                 sort
             }
-        });
+        })
 
         res.send(req.user.tasks)
     }catch(error){
